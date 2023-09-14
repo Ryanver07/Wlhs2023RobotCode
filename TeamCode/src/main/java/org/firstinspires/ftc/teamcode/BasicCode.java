@@ -26,11 +26,12 @@ public class BasicCode extends LinearOpMode { public void runOpMode() {
 
             test_motor1.setPower(x);
             test_motor2.setPower(x);
-            test_motor3.setPower(x);
-            test_motor4.setPower(x);
+            test_motor3.setPower(y);
+            test_motor4.setPower(y);
 
             telemetry.addData("Status", "Running");
             telemetry.update();
         }
     }
+
 }
