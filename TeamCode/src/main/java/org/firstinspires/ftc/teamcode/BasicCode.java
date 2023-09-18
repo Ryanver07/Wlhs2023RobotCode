@@ -1,3 +1,7 @@
+/*Wilde Lake High School Robot Code Version .04
+* Changes include:Adding this Version Bar and Removing "BasicBasicCode" Class
+* Last Tested Code: Never
+* */
 package org.firstinspires.ftc.teamcode;
 //import com.qualcomm.robotcore.eventloop.opmode;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
@@ -9,7 +13,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 public class BasicCode extends LinearOpMode { public void runOpMode() {
     double x;
     double y;
-
+    //assigning and creating variables for the hardware.
     DcMotor test_motor1 = hardwareMap.get(DcMotor.class, "M1");
     DcMotor test_motor2 = hardwareMap.get(DcMotor.class, "M2");
     DcMotor test_motor3 = hardwareMap.get(DcMotor.class, "M3");
@@ -33,5 +37,4 @@ public class BasicCode extends LinearOpMode { public void runOpMode() {
             telemetry.update();
         }
     }
-
 }
