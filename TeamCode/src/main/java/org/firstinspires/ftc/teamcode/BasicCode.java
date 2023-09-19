@@ -1,5 +1,5 @@
-/*Wilde Lake High School Robot Code Version .04
-* Changes include:Adding this Version Bar and Removing "BasicBasicCode" Class
+/*Wilde Lake High School Robot Code Version .05
+* Changes include: commenting 4 motor test and adding code for 2 motor manual mode.
 * Last Tested Code: Never
 * */
 package org.firstinspires.ftc.teamcode;
@@ -16,15 +16,23 @@ public class BasicCode extends LinearOpMode { public void runOpMode() {
     //assigning and creating variables for the hardware.
     DcMotor test_motor1 = hardwareMap.get(DcMotor.class, "M1");
     DcMotor test_motor2 = hardwareMap.get(DcMotor.class, "M2");
-    DcMotor test_motor3 = hardwareMap.get(DcMotor.class, "M3");
+    /*DcMotor test_motor3 = hardwareMap.get(DcMotor.class, "M3");
     DcMotor test_motor4 = hardwareMap.get(DcMotor.class, "M4");
-
+    */
     telemetry.addData("Status", "Initialized");
     telemetry.update();
 
     waitForStart();
         while (opModeIsActive())
         {
+            // 2 Motor config
+            x = gamepad1.right_stick_x;
+            y = -gamepad1.right_stick_y;
+
+            test_motor1.setPower(x-y);
+            test_motor2.setPower(x+y);
+
+            /*
             y = gamepad1.right_stick_y;
             x = -gamepad1.right_stick_x;
 
@@ -35,6 +43,8 @@ public class BasicCode extends LinearOpMode { public void runOpMode() {
 
             telemetry.addData("Status", "Running");
             telemetry.update();
+
+            */
         }
     }
 }
