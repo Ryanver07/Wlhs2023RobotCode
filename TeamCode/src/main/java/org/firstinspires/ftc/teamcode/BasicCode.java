@@ -1,14 +1,10 @@
-/*Wilde Lake High School Robot Code Version .05
-* Changes include: commenting 4 motor test and adding code for 2 motor manual mode.
-* Last Tested Code: Never
-* */
 package org.firstinspires.ftc.teamcode;
 //import com.qualcomm.robotcore.eventloop.opmode;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 //@Override
-@TeleOp
+@TeleOp(name = "BasicCode", group = "")
 public class BasicCode extends LinearOpMode {
     public void runOpMode() {
         double GCx;
