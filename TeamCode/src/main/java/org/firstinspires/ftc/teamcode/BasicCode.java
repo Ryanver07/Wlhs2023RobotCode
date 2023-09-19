@@ -6,45 +6,28 @@ package org.firstinspires.ftc.teamcode;
 //import com.qualcomm.robotcore.eventloop.opmode;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.DcMotorSimple;
+
 //@Override
 @TeleOp
-public class BasicCode extends LinearOpMode { public void runOpMode() {
-    double x;
-    double y;
-    //assigning and creating variables for the hardware.
-    DcMotor test_motor1 = hardwareMap.get(DcMotor.class, "M1");
-    DcMotor test_motor2 = hardwareMap.get(DcMotor.class, "M2");
-    /*DcMotor test_motor3 = hardwareMap.get(DcMotor.class, "M3");
-    DcMotor test_motor4 = hardwareMap.get(DcMotor.class, "M4");
-    */
-    telemetry.addData("Status", "Initialized");
-    telemetry.update();
+public class BasicCode extends LinearOpMode {
+    public void runOpMode() {
+        double GCx;
+        double GCy;
 
-    waitForStart();
-        while (opModeIsActive())
-        {
-            // 2 Motor config
-            x = gamepad1.right_stick_x;
-            y = -gamepad1.right_stick_y;
+        telemetry.addData("Status", "Initialized");
+        telemetry.update();
+        waitForStart();
+        while (opModeIsActive()) {
+            GCy = gamepad1.right_stick_y;
+            GCx = gamepad1.right_stick_x;
 
-            test_motor1.setPower(x-y);
-            test_motor2.setPower(x+y);
-
-            /*
-            y = gamepad1.right_stick_y;
-            x = -gamepad1.right_stick_x;
-
-            test_motor1.setPower(x);
-            test_motor2.setPower(x);
-            test_motor3.setPower(y);
-            test_motor4.setPower(y);
+            hardware.Motor_one.setPower(GCx);
+            hardware.Motor_two.setPower(GCx);
+            hardware.Motor_Three.setPower(GCy);
+            hardware.Motor_Four.setPower(GCy);
 
             telemetry.addData("Status", "Running");
             telemetry.update();
-
-            */
         }
     }
 }
