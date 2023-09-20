@@ -1,11 +1,22 @@
 **Wilde Lake High School Robotics Code Change Log**
-**Version 0.08**
+**Version 0.09**
 Last Tested: Never
+
+Changes Include:
+1. Removed Hardware Class
+2. Added resetRuntime(); to both remaining classes
+3. Added Hardware Mapping to both remaining classes
+
+Removing the hardware class will remove a possible point of error.
+
+**Version 0.08**
+Last Tested: 9-20-2023
+Test Ouput: Reliable Control App Crash
 
 Changes Include:
 1. Removing BasicCode Class
 2. Adding DualMotorMode Class & FourMotorMode Class
-3. Renamed"readme.md" to "ChangeLog.md"
+3. Renamed "readme.md" to "ChangeLog.md"
 
 DualMotorMode Class: Exact Same as FourMotorModeClass with the exeption of 2 lines of code removed
 and small edit to @TeleOp.
