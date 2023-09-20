@@ -1,6 +1,7 @@
 **Wilde Lake High School Robotics Code Change Log**
 
 **Version 0.09**
+
 Last Tested: Never
 
 Changes Include:
@@ -11,8 +12,10 @@ Changes Include:
 Removing the hardware class will remove a possible point of error.
 
 **Version 0.08**
+
 Last Tested: 9-20-2023
 Test Ouput: Reliable Control App Crash
+
 
 Changes Include:
 1. Removing BasicCode Class
@@ -26,7 +29,9 @@ FourMotorMode is identical to BasicCode with a small change of declaring the cla
 "FourMotorMode" instead of "BasicCode".
 
 **Version 0.07**
+
 Last Tested: Never
+
 
 Changes Include:
 1. Re-writing readme.md
