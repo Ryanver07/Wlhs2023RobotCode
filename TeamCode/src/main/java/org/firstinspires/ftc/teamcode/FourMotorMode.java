@@ -4,8 +4,9 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 //@Override
-@TeleOp(name = "BasicCode", group = "")
-public class BasicCode extends LinearOpMode {
+@TeleOp(name = "FourMotorMode", group = "Team 13463 (WLHS)")
+public class FourMotorMode extends LinearOpMode {
+
     public void runOpMode() {
         double GCx;
         double GCy;
