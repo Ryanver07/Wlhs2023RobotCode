@@ -18,7 +18,7 @@ public class DualMotorMode extends LinearOpMode {
             GCx = gamepad1.right_stick_x;
 
             hardware.Motor_one.setPower(GCx);
-            hardware.Motor_two.setPower(GCx);
+            hardware.Motor_two.setPower(GCy);
 
             telemetry.addData("Status", "Running");
             telemetry.update();
