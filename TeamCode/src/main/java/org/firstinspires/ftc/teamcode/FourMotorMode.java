@@ -9,6 +9,8 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 public class FourMotorMode extends LinearOpMode {
 
     public void runOpMode() {
+        telemetry.addData("Status", "Initializing");
+        telemetry.update();
         double GCx;
         double GCy;
 
@@ -35,6 +37,8 @@ public class FourMotorMode extends LinearOpMode {
             Motor_Four.setPower(GCy);
 
             telemetry.addData("Status", "Running");
+            telemetry.addData("Right Stick X: ", GCx);
+            telemetry.addData("Right Stick Y: ", GCy);
             telemetry.update();
             resetRuntime();
         }

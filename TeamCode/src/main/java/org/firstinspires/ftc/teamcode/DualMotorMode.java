@@ -13,6 +13,9 @@ public class DualMotorMode extends LinearOpMode {
         double GCx;
         double GCy;
 
+        telemetry.addData("Status", "Initializing");
+        telemetry.update();
+
         DcMotor Motor_Four = hardwareMap.get(DcMotor.class, "M4");
         DcMotor Motor_Three = hardwareMap.get(DcMotor.class, "M3");
         DcMotor Motor_two = hardwareMap.get(DcMotor.class, "M2");

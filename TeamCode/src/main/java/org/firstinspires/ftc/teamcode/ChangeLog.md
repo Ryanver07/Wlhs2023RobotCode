@@ -1,5 +1,12 @@
 **Wilde Lake High School Robotics Code Change Log**
 
+**Version 0.10**
+
+Last Tested: Never
+
+Changes Include:
+1. Updated Telemetry in both classes for better debuging
+
 **Version 0.09**
 
 Last Tested: Never
