@@ -8,6 +8,15 @@ Version 3: Perfected Manual Mode - Done By 11-1-2023
 Version 4: Basic Autonomous - Done By 11-23-2023
 Version 5: Perfected Autonomous  - Done By 12-10-2023
 
+**Version 0.12**
+Last Tested: Never
+
+Changes Include:
+1. Adding DualAutoMode Class.
+
+I am starting on auto mode now, because time is limited and this will help identify changes in hardware that
+may be needed before it takes an entire day to install a sensor.
+
 **Version 0.11**
 Last Tested: Never
 
