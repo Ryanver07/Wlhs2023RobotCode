@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 //@Override
 @TeleOp(name = "FourMotorMode", group = "Team 13463 (WLHS)")
 public class FourMotorMode extends LinearOpMode {
-
+    @Override
     public void runOpMode() {
         telemetry.addData("Status", "Initializing");
         telemetry.update();
@@ -37,10 +37,12 @@ public class FourMotorMode extends LinearOpMode {
             Motor_Four.setPower(GCy);
 
             telemetry.addData("Status", "Running");
-            telemetry.addData("Right Stick X: ", GCx);
             telemetry.addData("Right Stick Y: ", GCy);
+            telemetry.addData("Right Stick X: ", GCx);
             telemetry.update();
             resetRuntime();
         }
+        telemetry.addData("Status: ", "Stopped");
+        telemetry.update();
     }
 }

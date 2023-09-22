@@ -18,11 +18,11 @@ public class DualMotorMode extends LinearOpMode {
 
         DcMotor Motor_Four = hardwareMap.get(DcMotor.class, "M4");
         DcMotor Motor_Three = hardwareMap.get(DcMotor.class, "M3");
-        DcMotor Motor_two = hardwareMap.get(DcMotor.class, "M2");
-        DcMotor Motor_one = hardwareMap.get(DcMotor.class, "M1");
+        DcMotor Right_Motor = hardwareMap.get(DcMotor.class, "M2");
+        DcMotor Left_Motor = hardwareMap.get(DcMotor.class, "M1");
 
-        Motor_two.setPower(0);
-        Motor_two.setPower(0);
+        Right_Motor.setPower(0);
+        Left_Motor.setPower(0);
         Motor_Three.setPower(0);
         Motor_Four.setPower(0);
 
@@ -32,13 +32,20 @@ public class DualMotorMode extends LinearOpMode {
         while (opModeIsActive()) {
             GCy = gamepad1.right_stick_y;
             GCx = gamepad1.right_stick_x;
+            double Left_Power = Math.min(Math.max(GCy-GCx, -1),1);
+            double Right_Power = Math.min(Math.max(GCy+GCx, -1),1);
 
-            Motor_one.setPower(GCx);
-            Motor_two.setPower(GCy);
+            Left_Motor.setPower(Left_Power);
+            Right_Motor.setPower(Right_Power);
 
             telemetry.addData("Status", "Running");
+            telemetry.addData("Right Stick Y: ", GCy);
+            telemetry.addData("Right Stick X: ", GCx);
             telemetry.update();
             resetRuntime();
         }
+        telemetry.addData("Status: ", "Stopped");
+        telemetry.update();
     }
+
 }
