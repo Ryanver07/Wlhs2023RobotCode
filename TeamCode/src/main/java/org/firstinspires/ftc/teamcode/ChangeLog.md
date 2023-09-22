@@ -14,6 +14,8 @@ Last Tested: Never
 Changes Include:
 1. Adding DualAutoMode Class.
 
+In this version DualAutoMode serves as nothing but a test for a V2 Color Sensor.
+
 I am starting on auto mode now, because time is limited and this will help identify changes in hardware that
 may be needed before it takes an entire day to install a sensor.
 
