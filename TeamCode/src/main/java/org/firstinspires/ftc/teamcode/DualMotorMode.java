@@ -19,16 +19,16 @@ public class DualMotorMode extends LinearOpMode {
         telemetry.update();
 
         //declaring motors
-        DcMotor Motor_Four = hardwareMap.get(DcMotor.class, "M4");
-        DcMotor Motor_Three = hardwareMap.get(DcMotor.class, "M3");
+        //DcMotor Motor_Four = hardwareMap.get(DcMotor.class, "M4");
+        //DcMotor Motor_Three = hardwareMap.get(DcMotor.class, "M3");
         DcMotor Right_Motor = hardwareMap.get(DcMotor.class, "M2");
         DcMotor Left_Motor = hardwareMap.get(DcMotor.class, "M1");
 
         //setting intial power = 0
         Right_Motor.setPower(0);
         Left_Motor.setPower(0);
-        Motor_Three.setPower(0);
-        Motor_Four.setPower(0);
+        //Motor_Three.setPower(0);
+        //Motor_Four.setPower(0);
 
         //updating telemetry
         telemetry.addData("Status", "Initialized");
@@ -39,13 +39,13 @@ public class DualMotorMode extends LinearOpMode {
         while (opModeIsActive()) {
 
             //setting game controller vars = to game controller inputs
-            GCy = gamepad1.right_stick_y;
-            GCx = gamepad1.right_stick_x;
+            GCy = -gamepad1.right_stick_y;
+            GCx = -gamepad1.right_stick_x;
 
+            //THIS IS STUPID
             //declaring new vars with limits for controller
-            double Left_Power = Math.min(Math.max(GCy-GCx, -1),1);
-            double Right_Power = Math.min(Math.max(GCy+GCx, -1),1);
-
+            double Left_Power = Math.min(Math.max(GCx+GCy, -1),1);
+            double Right_Power = Math.min(Math.max(GCx-GCy,-1),1);
             //setting motor speed
             Left_Motor.setPower(Left_Power);
             Right_Motor.setPower(Right_Power);
