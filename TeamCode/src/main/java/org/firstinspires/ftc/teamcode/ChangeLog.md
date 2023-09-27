@@ -1,6 +1,25 @@
 **Wilde Lake High School Robotics Code Change Log**
 If you are viewing this on GitHub, please view it in the 'Code' mode.
 
+**Version Goals:**
+Version 1: Basic Movement - Done By 9-28-2023
+Version 2: Basic Manual Mode - Done By 10-20-2023
+Version 3: Perfected Manual Mode - Done By 11-1-2023
+Version 4: Basic Autonomous - Done By 11-23-2023
+Version 5: Perfected Autonomous  - Done By 12-10-2023
+
+**Version 1.00**
+Last Tested: 9-27-2023
+Test Output: Ran as Wanted. No Errors
+
+Changes Include:
+1. Fixing Dual Motor Mode for controller input
+2. Commenting Out Four Motor Mode
+
+This is it. Version 1 is done. In Version two, we will work on prototyping arm and
+grabber designs. DualAutoMode will also be getting changes for the purpose to test 
+Sensors and Tenserflow in preparation for Versions 4 and 5.
+
 **Version 0.12.1**
 Last tested: 9-27-2023
 
@@ -9,12 +28,7 @@ Changes Include:
 2. Adding Version Goals
 
 
-**Version Goals:**
-Version 1: Basic Movement - Done By 9-28-2023
-Version 2: Basic Manual Mode - Done By 10-20-2023
-Version 3: Perfected Manual Mode - Done By 11-1-2023
-Version 4: Basic Autonomous - Done By 11-23-2023
-Version 5: Perfected Autonomous  - Done By 12-10-2023
+
 
 **Version 0.12.0**
 Last Tested: Never
