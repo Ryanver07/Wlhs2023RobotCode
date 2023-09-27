@@ -1,6 +1,14 @@
 **Wilde Lake High School Robotics Code Change Log**
 If you are viewing this on GitHub, please view it in the 'Code' mode.
 
+**Version 0.12.1**
+Last tested: Never
+
+Changes Include:
+1. Commenting code
+2. Adding Version Goals
+
+
 **Version Goals:**
 Version 1: Basic Movement - Done By 9-28-2023
 Version 2: Basic Manual Mode - Done By 10-20-2023
@@ -8,13 +16,13 @@ Version 3: Perfected Manual Mode - Done By 11-1-2023
 Version 4: Basic Autonomous - Done By 11-23-2023
 Version 5: Perfected Autonomous  - Done By 12-10-2023
 
-**Version 0.12**
+**Version 0.12.0**
 Last Tested: Never
 
 Changes Include:
 1. Adding DualAutoMode Class.
 
-In this version DualAutoMode serves as nothing but a test for a V2 Color Sensor.
+In this version, DualAutoMode serves as nothing but a test for a V2 Color Sensor.
 
 I am starting on auto mode now, because time is limited and this will help identify changes in hardware that
 may be needed before it takes an entire day to install a sensor.

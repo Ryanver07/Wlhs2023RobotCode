@@ -20,7 +20,7 @@ public class DualAutoMode extends LinearOpMode{
         while(opModeIsActive()){
             telemetry.addData("Blue", Color1.blue());
             telemetry.addData("Green", Color1.green());
-            telemetry.addData("red", Color1.red());
+            telemetry.addData("Red", Color1.red());
             telemetry.update();
         }
     }
